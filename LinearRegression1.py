@@ -6,7 +6,7 @@ df = get_data('CancerData.csv').data
 print(df)
 
 X = df['']
-y = df['']
+y = df['Classification']
 
 from sklearn.linear_model import LinearRegression
 

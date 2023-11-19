@@ -4,8 +4,8 @@ from bioinfokit.analys import get_data
 df = get_data('CancerData.csv').data
 
 # convert independent and dependent variables to PyTorch tensor
-X = th.tensor(df[['']].values, dtype = th.float32)
-y = th.tensor(df[['']].values, dtype = th.float32)
+X = th.tensor(df[['Age', 'BMI',	'Glucose', 'Insulin',	'HOMA',	'Leptin',	'Adiponectin', 'Resistin',	'MCP.1']].values, dtype = th.float32)
+y = th.tensor(df[['Classification']].values, dtype = th.float32)
 
 # create regression model
 in_features = 1
